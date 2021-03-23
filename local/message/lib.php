@@ -21,10 +21,7 @@
  */
 
 function local_message_before_footer() {
-    $message = "a test message";
-    $type = \core\output\notification::NOTIFY_WARNING;
-    \core\notification::add($message, $type);
-    /*
+    
     global $DB, $USER;
     $sql = "SELECT lm.id, lm.messagetext, lm.messagetype 
             FROM {local_message} lm 
@@ -54,5 +51,5 @@ function local_message_before_footer() {
         $readrecord->timeread = time();
         $DB->insert_record('local_message_read', $readrecord);
     }
-    */
+    
 }
